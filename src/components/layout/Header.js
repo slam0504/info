@@ -8,26 +8,22 @@ const Header = () => (
     <div className="container flex flex-col sm:flex-row justify-between items-center mx-auto py-4 px-8">
       <div className="flex items-center text-2xl">
         <div className="w-12 mr-3">
-          <LogoIcon />
         </div>
-        Lander
+        提格 & 托格
       </div>
       <div className="flex mt-4 sm:mt-0">
         <AnchorLink className="px-4" href="#about">
-          About
+          關於我們
         </AnchorLink>
         <AnchorLink className="px-4" href="#fursona">
-          Fursona
+          獸設
         </AnchorLink>
         <AnchorLink className="px-4" href="#gallery">
-          Gallery
+          委託畫作
         </AnchorLink>
         <AnchorLink className="px-4" href="#links">
-          Links
+          外部連結
         </AnchorLink>
-      </div>
-      <div className="hidden md:block">
-        <Button className="text-sm">Start Free Trial</Button>
       </div>
     </div>
   </header>

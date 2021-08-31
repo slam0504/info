@@ -1,16 +1,26 @@
 import React from 'react';
 import Card from './Card';
 
-const GalleryCard = ({ customer }) => (
-  <Card className="mb-8">
-    <p className="text-xl font-semibold">{customer.title}</p>
-    <p className="float-right">{customer.painter}</p>
-    <img
-      className="object-contain object-center bg-yellow-300 w-64 h-64 mx-auto mt-8"
-      src={customer.image}
-      alt={customer.painter}
-    />
-  </Card>
+const GalleryCard = ({ inex, className, gallery }) => (
+  <div key={inex} className={className}>
+    <Card>
+      <div className="float-left mb-2">
+        <p className="float-left">角色: </p>
+        {gallery.member.map(member => (
+          <a className="ml-1 mr-1" href={member.link} target="_blank">{member.name}</a>
+        ))}
+      </div>
+      <img
+        className="object-contain object-center w-72 h-72 mx-auto"
+        src={gallery.image}
+        alt={gallery.painter.name}
+      />
+      <div className="float-right mt-2">
+        <p className="float-left">繪師: </p>
+        <a className="ml-1 mr-1" href={gallery.painter.link} target="_blank">{gallery.painter.name}</a>
+      </div>
+    </Card>
+  </div>
 );
 
 export default GalleryCard;
