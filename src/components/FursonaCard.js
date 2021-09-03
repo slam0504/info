@@ -1,8 +1,8 @@
 import React from 'react';
 import Card from './Card';
 
-const FursonaCard = ({ index, className, fursona }) => (
-  <div key={index} className={className}>
+const FursonaCard = ({ className, fursona }) => (
+  <div className={className}>
     <Card className="mb-8">
       <p className="text-xl font-semibold">{fursona.title}</p>
       <img

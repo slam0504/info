@@ -1,13 +1,13 @@
 import React from 'react';
 import Card from './Card';
 
-const GalleryCard = ({ inex, className, gallery }) => (
-  <div key={inex} className={className}>
+const GalleryCard = ({ index, className, gallery, handleOpen }) => (
+  <div className={`cursor-pointer ${className}`} onClick={handleOpen(index)}>
     <Card>
       <div className="float-left mb-2">
         <p className="float-left">角色: </p>
-        {gallery.member.map(member => (
-          <a className="ml-1 mr-1" href={member.link} target="_blank">{member.name}</a>
+        {gallery.member.map((member, i) => (
+          <a key={`member${index}${i}`} className="ml-1 mr-1" href={member.link} target="_blank">{member.name}</a>
         ))}
       </div>
       <img
