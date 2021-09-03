@@ -10,6 +10,5 @@ module.exports = {
         tailwindConfig: `tailwind.config.js`
       }
     },
-    'gatsby-plugin-postcss',
   ]
 };

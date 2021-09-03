@@ -2,8 +2,6 @@ import React from "react"
 
 const LightboxReact = ({
   mainSrc,
-  nextSrc,
-  prevSrc,
   onCloseRequest,
   onMovePrevRequest,
   onMoveNextRequest,
