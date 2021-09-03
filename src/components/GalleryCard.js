@@ -1,9 +1,9 @@
 import React from 'react';
 import Card from './Card';
 
-const GalleryCard = ({ index, className, gallery, handleOpen }) => (
-  <div className={`cursor-pointer ${className}`} onClick={handleOpen(index)}>
-    <Card>
+const GalleryCard = ({ index, className, gallery }) => (
+  <div className={`cursor-pointer ${className}`}>
+    <Card image={gallery.image}>
       <div className="float-left mb-2">
         <p className="float-left">角色: </p>
         {gallery.member.map((member, i) => (
