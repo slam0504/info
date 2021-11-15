@@ -3,7 +3,7 @@ import Card from './Card';
 
 const FursonaCard = ({ className, fursona }) => (
   <div className={className}>
-    <Card className="mb-8">
+    <Card className="mb-8" image={fursona.image}>
       <p className="text-xl font-semibold">{fursona.title}</p>
       <img
         className="object-contain object-center w-72 h-72 mx-auto mt-8"
